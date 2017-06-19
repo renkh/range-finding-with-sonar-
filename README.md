@@ -12,3 +12,12 @@ Individually addressable [RGB LED light strip.](https://www.amazon.com/gp/produc
 ## Installation Instructions
 Download and install [Arduino IDE.](https://www.arduino.cc/en/Main/Software)
 After installing you'll need to add FastLed and NewPing libraries to Arduino IDE by opening IDE > Sketch > Include Library > Add .ZIP Library... The libraries are included in the master.
+
+In sonar_blink_with_led.ino modify #define parameters to match your hardware
+* NUM_LEDS specify the number of leds you want to light up
+* COLOR_ORDER specify the led order your light strip is set in
+* CHIPSET model of the led chip your light strip uses
+* DATA_PIN data pin on arduino that the ultrasonic sensor is connected to
+* TRIGPIN trigger pin on arduino that the ultrasonic sensor is connected to
+* ECHOPIN echo pin on arduino that the ultrasonic sensor is connected to
+* MAX_DISTANCE specify the max distance in centimeters that the ultrasonic sensor will read. Note max is 400, lower the distance more accurate the reading.
